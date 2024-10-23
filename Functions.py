@@ -29,3 +29,34 @@ def TIME_SERIES_DAILY_ADJUSTED(symbol):
     data = r.json()
 
     print(data)
+
+def TIME_SERIES_WEEKLY(symbol):
+
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol={symbol}&apikey={apikey}'
+    r = requests.get(url)
+    data = r.json()
+
+    print(data)
+
+def TIME_SERIES_WEEKLY_ADJUSTED(symbol):
+
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol={symbol}&apikey={apikey}'
+    r = requests.get(url)
+    data = r.json()
+
+    print(data)
+
+def TIME_SERIES_MONTHLY(symbol):
+
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol={symbol}&apikey={apikey}'
+    r = requests.get(url)
+    data = r.json()
+
+    print(data)
+
+def TIME_SERIES_MONTHLY_ADJUSTED(symbol):
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol={symbol}&apikey={apikey}'
+    r = requests.get(url)
+    data = r.json()
+
+    print(data)
